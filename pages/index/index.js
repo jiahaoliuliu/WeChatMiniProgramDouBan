@@ -79,7 +79,6 @@ Page({
 
     var promises = this.data.boards.map(function (board) {
       var url = "https://douban.uieee.com/v2/movie/".concat(board.key).concat("?start=0&count=10")
-      console.log(url)
       return app.request(url)
         .then(function (data) {
           if (!data) return board
