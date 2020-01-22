@@ -1,0 +1,7 @@
+{
+  "pages": [
+    "pages/index/splash",
+    "pages/index/index"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
