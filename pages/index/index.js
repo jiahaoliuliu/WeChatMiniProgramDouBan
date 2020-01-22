@@ -12,7 +12,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getStorage({
+      key: 'has_shown_splash',
+      fail: err => {
+        wx.redirectTo({
+          url: '/pages/douban/splash',
+        })
+      }
+    })
   },
 
   /**
