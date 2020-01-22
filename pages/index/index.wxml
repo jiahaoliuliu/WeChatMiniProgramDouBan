@@ -1,2 +1,51 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<swiper
+  style="height:450rpx"
+  indicator-dots
+  autoplay="true"
+  interval="5000"
+  duration="1000">
+    <swiper-item
+      wx:for="{{ boards[0].movies}}"
+      wx:key="id">
+      <navigator
+        hover-class="none">
+        <image style="height:450rpx; width:750rpx;"
+          src="{{ item.images.large }}" mode="aspectFill" />
+      </navigator>
+    </swiper-item>
+</swiper>
+
+<swiper
+  style="height:450rpx"
+  indicator-dots
+  autoplay="true"
+  interval="5000"
+  duration="1000">
+    <swiper-item
+      wx:for="{{ boards[1].movies}}"
+      wx:key="id">
+      <navigator
+        hover-class="none">
+        <image style="height:450rpx; width:750rpx;"
+          src="{{ item.images.large }}" mode="aspectFill" />
+      </navigator>
+    </swiper-item>
+</swiper>
+
+<swiper
+  style="height:450rpx"
+  indicator-dots
+  autoplay="true"
+  interval="5000"
+  duration="1000">
+    <swiper-item
+      wx:for="{{ boards[2].movies}}"
+      wx:key="id">
+      <navigator
+        hover-class="none">
+        <image style="height:450rpx; width:750rpx;"
+          src="{{ item.images.large }}" mode="aspectFill" />
+      </navigator>
+    </swiper-item>
+</swiper>
