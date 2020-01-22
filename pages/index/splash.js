@@ -14,7 +14,7 @@ Page({
   // Requesting data and set the content
   onLoad: function (options) {
     let app = getApp()
-    app.request("https://api.douban.com/v2/movie/comming_soon?start=0&count=3").then(
+    app.request("https://douban.uieee.com/v2/movie/coming_soon?start=0&count=3").then(
       data => {
         this.setData({ subjects: data.subjects })
       }

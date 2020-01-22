@@ -2,7 +2,7 @@
 <swiper style="height: 100%; width: 100%;" indicator-dots>
   <swiper-item
     wx:for="{{ subjects }}"
-    wx:key="{{ item.id }}"
+    wx:key="id"
     style="flex: 1;">
     <image
       src="{{ item.images.large }}"
