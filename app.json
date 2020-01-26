@@ -3,6 +3,8 @@
     "pages/index/index"
     ,
     "pages/index/splash"
+    ,
+    "pages/index/item"
   ],
   "sitemapLocation": "sitemap.json"
 }
